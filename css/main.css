@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'c';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'montserrat';
+}
+
+.container {
+    max-width: 946px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+.navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 940px;
+    width: 100%;
+    min-height: 90px;
+    border-bottom: 1px solid #828282;
+}
+.navbar__list a {
+    color: #828282;
+    font-family: 'montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    transition: 0.5s ease;
+}
+.navbar__list a:hover {
+    color: #070707;
+    font-weight: 700;
+}
+/* header */
+.header {
+    min-height: 680px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.header__img {
+    width: 100%;
+    height: 387px;
+}
+.burger,
+.header__img--phone {
+    display: none;
+}
+.header__text {
+    width: 100%;
+    max-height: 190px;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__text h1{
+    width: 125px;
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 58px;
+}
+.header__text p {
+    width: 155px;
+    text-align: center;
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+p.right__text {
+    width: 80px;
+    max-height: 17px;
+    transform: rotate(-90deg);
+    font-family: 'montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+p.right__text span:hover  {
+    color: #070707;
+}
+/* about */
+.about {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.about h2,
+.about p {
+    margin: 30px;
+}
+.about h2 {
+    font-size: 34px;
+    line-height: 42px;
+}
+.about p {
+    font-size: 18px;
+    line-height: 22px;
+}
+.about__text {
+    max-width: 468px;
+    text-align: center;
+}
+/* skills */
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 90px 0 100px;
+}
+.skills h2 {
+    font-size: 34px;
+    line-height: 42px;
+}
+.skills p {
+    margin: 70px 0 80px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.skills__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.card {
+    width: 20%;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;  
+    /* border: 1px solid black; */
+    position: relative;
+    transition: 2s;
+}
+.card:hover {
+    background-color: #82828248 ;
+}
+
+.skills__cards h4 {
+    max-width: 90px;
+    margin: 23px 0 40px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+.stars {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+}
+/* portfolio */
+.portfolio {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F6F6F6;
+}
+.portfolio h2 {
+    font-size: 34px;
+    line-height: 42px;
+    margin: 112px 0 47px;
+}
+.portfolio__text {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    margin: 45px 0 100px;
+    color: #070707;
+}
+.portfolio__card {
+    max-width: 936px;
+    width: 100%;
+    height: 522px;
+    border: 1px solid green;
+}
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h2 {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    margin: 114px 0 20px;
+    font-weight: 700;
+}
+.footer p {
+    max-width: 275px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+.footer button {
+    align-items: center;
+    width: 180px;
+    height: 42px;
+    border-radius: 20px;
+    background-color: #070707;
+    text-align: center;
+    color: white;
+    margin: 30px 0 86px;
+    top: 50%;
+}
+
+.footer a {
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer__icons {
+    max-width: 342px;
+    width: 100%;
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__icons img,
+.footer__icons a {
+    width: 40px;
+    height: 40px;
+}
+.footer__text {
+    margin: 45px 0 105px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    text-align: center;
+    color: #828282;
+}
+
+
+@media screen and  (max-width: 940px) {
+    .navbar__list,
+    .header__text {
+        padding: 0 15px;
+    }
+    
+}
+@media (max-width: 520px) {
+    /* header  */
+    .navbar__list,
+    .right__text {
+        display: none;
+    }
+    .header {
+        padding: 65px 15px 0;
+    }
+    .header__text {
+        flex-direction: column;
+        align-items: start;
+    }
+    .header p {
+        margin: 23px 0 36px;
+    }
+    .burger {
+        display: flex;
+        width: 33px;
+        height: 20px;
+        position: absolute;
+        top: 70px;
+        right: 15px;
+    }
+    .header__img {
+        display: none;
+    }
+    .header__img--phone {
+        display: flex;
+        width: 95%;
+        margin: 36px 0 83px;
+    }
+    /* skills  */
+    .skills__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__icons {
+        padding: 0 10px;
+    }
+}
